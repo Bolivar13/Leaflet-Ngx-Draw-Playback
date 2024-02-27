@@ -1,0 +1,115 @@
+<div leaflet style=" height: 610px;width: 1510px;
+     /* padding: 0; */ /* margin: 00; */
+     margin-top: 30px; margin-left: 4px;
+     border: 2px solid black; "
+
+     leafletDraw
+     [leafletOptions]="options"
+     [leafletDrawOptions]="drawOptions"
+     [leafletDrawLocal]="drawLocal"
+     (leafletDrawCreated)="onDrawCreated($event)"
+     (leafletDrawStart)="onDrawStart($event)">
+
+ 	<div [leafletLayer]="drawnItems"></div>
+
+<div  >
+    <div class="leaflet-control-playback leaflet-control">
+        <div class="optionsContainer">
+            <div class="show-trackpoint trackplayback-checkbox">
+                <input
+                    class="trackplayback-input"
+                    type="checkbox"
+                    id="trackplayback-input-60"/><label class="trackplayback-label" for="trackplayback-input-60" >
+                    show trackPoint</label >
+            </div>
+            <div class="show-trackLine trackplayback-checkbox">
+                <input
+                    class="trackplayback-input"
+                    type="checkbox"
+                    id="trackplayback-input-63"
+                /><label class="trackplayback-label" for="trackplayback-input-63"
+                    >show trackLine</label
+                >
+            </div>
+        </div>
+
+        <div class="buttonContainer" >
+            
+            <a href="#" title="play"  role="button" aria-label="play">
+               <img class="btn-stop" src="../../assets/images/icon-play.png"   />
+            </a>
+
+            <a    href="#"  title="replay" role="button" aria-label="replay">
+               <img class="btn-restart" src="../../assets/images/icon-restart.png"   />
+
+            </a>
+
+            <a    href="#"  title="slow"  role="button" aria-label="slow">
+               <img class="btn-slow" src="../../assets/images/icon-slow.png"   />
+
+            </a>
+            
+            <a  href="#" title="quick" role="button"   aria-label="quick">
+               <img class="btn-quick" src="../../assets/images/icon-quick.png"   />
+
+            </a>
+            
+            <a  href="#"  title="close" role="button"  aria-label="close" >
+               <img class="btn-close" src="../../assets/images/icon-close.png"   />
+
+            </a>
+        </div>
+        <br>
+        <div class="infoContainer">
+            <div class="info-container">
+                <span class="info-title">startTime: </span
+                ><span class="info-start-time">2017-08-07 14:00:19</span>
+            </div>
+            <div class="info-container">
+                <span class="info-title">endTime: </span
+                ><span class="info-end-time">2017-08-11 10:58:38</span>
+            </div>
+            <div class="info-container">
+                <span class="info-title">curTime: </span
+                ><span class="info-cur-time">2017-08-07 14:00:19</span>
+            </div>
+           
+    </div>
+    
+    <style>
+        .leaflet-control-playback {
+            position: relative;
+            background-color: #4b96d7;
+            padding: 20px;
+            width: 235px;
+            margin-top: 79px;
+            margin-left: 11px;
+    
+        }
+        .leaflet-control-playback .optionsContainer {
+            position: relative;
+        
+        }
+        .leaflet-control-playback .optionsContainer > div {
+            display: inline-block;
+        }
+    
+        .leaflet-control-playback .buttonContainer a {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            text-decoration: none;
+        }
+         
+         
+    </style>
+    
+</div>
+
+</div>
+
+ 
+
+
+
+

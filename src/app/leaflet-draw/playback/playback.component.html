@@ -1,0 +1,129 @@
+<div class="leaflet-control-playback leaflet-control">
+	<div class="optionsContainer">
+		<div class="show-trackpoint trackplayback-checkbox">
+			<input
+				class="trackplayback-input"
+				type="checkbox"
+				id="trackplayback-input-60"
+			/><label class="trackplayback-label" for="trackplayback-input-60"
+				>show trackPoint</label
+			>
+		</div>
+		<div class="show-trackLine trackplayback-checkbox">
+			<input
+				class="trackplayback-input"
+				type="checkbox"
+				id="trackplayback-input-63"
+			/><label class="trackplayback-label" for="trackplayback-input-63"
+				>show trackLine</label
+			>
+		</div>
+	</div>
+	<div class="buttonContainer">
+		<a
+			class="btn-stop"
+			href="#"
+			title="play"
+			role="button"
+			aria-label="play"
+		></a
+		><a
+			class="btn-restart"
+			href="#"
+			title="replay"
+			role="button"
+			aria-label="replay"
+		></a
+		><a
+			class="btn-slow"
+			href="#"
+			title="slow"
+			role="button"
+			aria-label="slow"
+		></a
+		><a
+			class="btn-quick"
+			href="#"
+			title="quick"
+			role="button"
+			aria-label="quick"
+		></a
+		><a
+			class="btn-close"
+			href="#"
+			title="close"
+			role="button"
+			aria-label="close"
+		></a>
+	</div>
+	<div class="infoContainer">
+		<div class="info-container">
+			<span class="info-title">startTime: </span
+			><span class="info-start-time">2017-08-07 14:00:19</span>
+		</div>
+		<div class="info-container">
+			<span class="info-title">endTime: </span
+			><span class="info-end-time">2017-08-11 10:58:38</span>
+		</div>
+		<div class="info-container">
+			<span class="info-title">curTime: </span
+			><span class="info-cur-time">2017-08-07 14:00:19</span>
+		</div>
+		<div class="info-container">
+			<span class="info-title">speed: </span
+			><span class="info-speed-ratio">X12</span>
+		</div>
+	</div>
+	<div class="sliderContainer">
+		<input
+			class="time-slider"
+			type="range"
+			min="1502110819"
+			max="1502445518"
+			value="1502110819"
+		/>
+	</div>
+</div>
+
+<style>
+	.leaflet-control-playback {
+		/* position: relative; */
+		background-color: #7cbdf5;
+		padding: 30px;
+    width: 250px;
+
+	}
+	.leaflet-control-playback .optionsContainer {
+		position: relative;
+    
+	}
+	.leaflet-control-playback .optionsContainer > div {
+		display: inline-block;
+	}
+
+	.leaflet-control-playback .buttonContainer a {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		text-decoration: none;
+	}
+	.leaflet-control-playback .buttonContainer .btn-stop {
+		background: url(./images/icon-play.png) no-repeat center;
+	}
+	.leaflet-control-playback .buttonContainer .btn-start {
+		background: url(./images/icon-stop.png) no-repeat center;
+	}
+	.leaflet-control-playback .buttonContainer .btn-restart {
+		background: url(./images/icon-restart.png) no-repeat center;
+	}
+	.leaflet-control-playback .buttonContainer .btn-slow {
+		background: url(./images/icon-slow.png) no-repeat center;
+	}
+	.leaflet-control-playback .buttonContainer .btn-quick {
+		background: url(./images/icon-quick.png) no-repeat center;
+	}
+	.leaflet-control-playback .buttonContainer .btn-close {
+		background: url(./images/icon-close.png) no-repeat center;
+	}
+	 
+</style>
